@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продукты</title>
+
+    <!-- TABLE CSS -->
+    <link rel="stylesheet" href="../css/dataTables.dataTables.min.css">
+
+    <!-- FIXED COLUMNS CSS -->
+    <link rel="stylesheet" href="../css/fixedColumns.dataTables.css">
+
+    <!-- MAIN CUSTOM CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+
+    <!-- MOBILE BAR -->
+    <div class="mobile__bar">
+        <div class="navigation">
+            <ul>
+                <!-- HOME -->
+                <li class="list">
+                    <a href="../index.html">
+                        <span class="icon">
+                            <i class="bx bx-grid-alt fa-solid fa-house"></i>
+                        </span>
+                        <span class="text">Главный</span>
+                    </a>
+                </li>
+
+                <!-- CLIENTS -->
+                <li class="list">
+                    <a href="orders.html">
+                        <span class="icon">
+                            <i class="fa-solid fa-clipboard-list"></i>
+                        </span>
+                        <span class="text">Заказы</span>
+                    </a>
+                </li>
+
+                <!-- STUDENTS -->
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </span>
+                        <span class="text">Продукты</span>
+                    </a>
+                </li>
+
+                <!-- STUDENTS -->
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa-solid fa-sack-dollar"></i>
+                        </span>
+                        <span class="text">Доход</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                        <span class="text">Профиль</span>
+                    </a>
+                </li>
+
+                <div class="indicator"></div>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sidebar active open">
+        <div class="logo-details">
+            <div class="logo_name"><img src="../img/greenwuz-logo.png" alt=""></div>
+            <i class="bx bx-menu icon fa-solid fa-bars" id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="../index.html">
+                    <i class="bx bx-grid-alt fa-solid fa-house"></i>
+                    <span class="links_name">Главный</span>
+                </a>
+                <span class="tooltip">Главный</span>
+            </li>
+
+            <li>
+                <a href="orders.html">
+                    <i class="bx bx-user fa-solid fa-clipboard-list"></i>
+                    <span class="links_name">Заказы</span>
+                </a>
+                <span class="tooltip">Заказы</span>
+            </li>
+
+            <li>
+                <a href="product.html">
+                    <i class="fa-solid fa-cart-shopping bx bx-chat"></i>
+                    <span class="links_name">Продукты</span>
+                </a>
+                <span class="tooltip">Продукты</span>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="bx bx-pie-chart-alt- fa-solid fa-sack-dollar"></i>
+                    <span class="links_name">Общий доход</span>
+                </a>
+                <span class="tooltip">Общий доход </span>
+            </li>
+
+            <li class="profile">
+                <div class="profile-details">
+                    <div class="name_job">
+                        <div class="name">Выйти</div>
+                    </div>
+                </div>
+                <i class="bx bx-log-out fa-solid fa-arrow-up-from-bracket" id="log_out"></i>
+            </li>
+        </ul>
+    </div>
+
+    <section class="home-section">
+
+        <a href="../index.html" class="backToMenu"><i class="fa-solid fa-angle-left"></i></a>
+
+        <div class="products">
+            <h2>Продукты</h2>
+
+            <div class="tab-container">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" content-id="active">
+                        Активный товары
+                    </button>
+                    <button class="tab-btn" content-id="disabled">
+                        Не активный товары
+                    </button>
+                </div>
+
+                <div class="tab-contents">
+                    <div class="content show" id="active">
+                        <div class="content-info">
+
+                            <div class="content-info">
+                                <div class="card" id="card1">
+                                    <div class="card-content">
+                                        <li><a href="#" class="modal-trigger"><i class="fa-solid fa-ellipsis"></i></a>
+                                            <ul class="modal-menu">
+                                                <li><a class="activate" href="#">Активировать товар</a></li>
+                                                <li class="delete-btn"><a href="#">Удалить товар</a></li>
+                                                <li><a href="addProduct.html">Изменить товар</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <img src="../img/producyInfo-img.png" alt="">
+
+                                        <div>
+                                            <h3 class="name">
+                                                Свежая картошка
+                                            </h3>
+
+                                            <h4 class="price">
+                                                5 500 сум за кг
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card" id="card2">
+                                    <div class="card-content">
+                                        <li><a href="#" class="modal-trigger"><i class="fa-solid fa-ellipsis"></i></a>
+                                            <ul class="modal-menu">
+                                                <li><a class="activate" href="#">Активировать товар</a></li>
+                                                <li class="delete-btn"><a href="#">Удалить товар</a></li>
+                                                <li><a href="addProduct.html">Изменить товар</a></li>
+                                            </ul>
+                                        </li>
+                                        <img src="../img/products-img.png" alt="">
+
+                                        <div>
+                                            <h3 class="name">
+                                                Свежая картошка
+                                            </h3>
+
+                                            <h4 class="price">
+                                                5 500 сум за кг
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card" id="card3">
+                                    <div class="card-content">
+                                        <li><a href="#" class="modal-trigger"><i class="fa-solid fa-ellipsis"></i></a>
+                                            <ul class="modal-menu">
+                                                <li><a class="activate" href="#">Активировать товар</a></li>
+                                                <li class="delete-btn"><a href="#">Удалить товар</a></li>
+                                                <li><a href="addProduct.html">Изменить товар</a></li>
+                                            </ul>
+                                        </li>
+                                        <img src="../img/products-img.png" alt="">
+
+                                        <div>
+                                            <h3 class="name">
+                                                Свежая картошка
+                                            </h3>
+
+                                            <h4 class="price">
+                                                5 500 сум за кг
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <a href="addProduct.html">
+                                    <div class="cart">
+                                        <div class="cart-content">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="content" id="disabled">
+                        <div class="content-info">
+                            <div class="card" id="card4">
+                                <div class="card-content">
+                                    <li><a href="#" class="modal-trigger"><i class="fa-solid fa-ellipsis"></i></a>
+                                        <ul class="modal-menu">
+                                            <li><a class="activate" href="#">Активировать товар</a></li>
+                                            <li class="delete-btn"><a href="#">Удалить товар</a></li>
+                                            <li><a href="addProduct.html">Изменить товар</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <img src="../img/producyInfo-img.png" alt="">
+
+                                    <div>
+                                        <h3 class="name">
+                                            Свежая картошка
+                                        </h3>
+
+                                        <h4 class="price">
+                                            5 500 сум за кг
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card" id="card5">
+                                <div class="card-content">
+                                    <li><a href="#" class="modal-trigger"><i class="fa-solid fa-ellipsis"></i></a>
+                                        <ul class="modal-menu">
+                                            <li><a class="activate" href="#">Активировать товар</a></li>
+                                            <li class="delete-btn"><a href="#">Удалить товар</a></li>
+                                            <li><a href="addProduct.html">Изменить товар</a></li>
+                                        </ul>
+                                    </li>
+                                    <img src="../img/products-img.png" alt="">
+
+                                    <div>
+                                        <h3 class="name">
+                                            Свежая картошка
+                                        </h3>
+
+                                        <h4 class="price">
+                                            5 500 сум за кг
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card" id="card6">
+                                <div class="card-content">
+                                    <li><a href="#" class="modal-trigger"><i class="fa-solid fa-ellipsis"></i></a>
+                                        <ul class="modal-menu">
+                                            <li><a class="activate" href="#">Активировать товар</a></li>
+                                            <li class="delete-btn"><a href="#">Удалить товар</a></li>
+                                            <li><a href="addProduct.html">Изменить товар</a></li>
+                                        </ul>
+                                    </li>
+                                    <img src="../img/products-img.png" alt="">
+
+                                    <div>
+                                        <h3 class="name">
+                                            Свежая картошка
+                                        </h3>
+
+                                        <h4 class="price">
+                                            5 500 сум за кг
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="addProduct.html">
+                                <div class="cart">
+                                    <div class="cart-content">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--LAYOUT JQUERY JS -->
+    <script src="../libs/jquery.min.js"></script>
+
+    <!-- LAYOUT TABLE JS -->
+    <script src="../libs/dataTables.js"></script>
+    <script src="../libs/fixedColumns.js"></script>
+
+    <!-- LANDING -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+    <script src="../js/products/product.js"></script>
+
+    <script src="../js/main.js"></script>
+
+    <script src="../libs/FontAwesome.js"></script>
+
+
+</body>
+
+</html>

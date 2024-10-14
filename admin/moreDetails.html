@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подробнее</title>
+
+    <!-- TABLE CSS -->
+    <link rel="stylesheet" href="../css/dataTables.dataTables.min.css">
+
+    <!-- FIXED COLUMNS CSS -->
+    <link rel="stylesheet" href="../css/fixedColumns.dataTables.css">
+
+    <!-- MAIN CUSTOM CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+
+    <!-- MOBILE BAR -->
+    <div class="mobile__bar">
+        <div class="navigation">
+            <ul>
+                <!-- HOME -->
+                <li class="list">
+                    <a href="../index.html">
+                        <span class="icon">
+                            <i class="bx bx-grid-alt fa-solid fa-house"></i>
+                        </span>
+                        <span class="text">Главный</span>
+                    </a>
+                </li>
+
+                <!-- CLIENTS -->
+                <li class="list">
+                    <a href="orders.html">
+                        <span class="icon">
+                            <i class="fa-solid fa-clipboard-list"></i>
+                        </span>
+                        <span class="text">Заказы</span>
+                    </a>
+                </li>
+
+                <!-- STUDENTS -->
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </span>
+                        <span class="text">Продукты</span>
+                    </a>
+                </li>
+
+                <!-- STUDENTS -->
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa-solid fa-sack-dollar"></i>
+                        </span>
+                        <span class="text">Доход</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                        <span class="text">Профиль</span>
+                    </a>
+                </li>
+
+                <div class="indicator"></div>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sidebar active open">
+        <div class="logo-details">
+            <div class="logo_name"><img src="../img/greenwuz-logo.png" alt=""></div>
+            <i class="bx bx-menu icon fa-solid fa-bars" id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="../index.html">
+                    <i class="bx bx-grid-alt fa-solid fa-house"></i>
+                    <span class="links_name">Главный</span>
+                </a>
+                <span class="tooltip">Главный</span>
+            </li>
+
+            <li>
+                <a href="orders.html">
+                    <i class="bx bx-user fa-solid fa-clipboard-list"></i>
+                    <span class="links_name">Заказы</span>
+                </a>
+                <span class="tooltip">Заказы</span>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping bx bx-chat"></i>
+                    <span class="links_name">Продукты</span>
+                </a>
+                <span class="tooltip">Продукты</span>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="bx bx-pie-chart-alt- fa-solid fa-sack-dollar"></i>
+                    <span class="links_name">Общий доход</span>
+                </a>
+                <span class="tooltip">Общий доход </span>
+            </li>
+
+            <li class="profile">
+                <div class="profile-details">
+                    <div class="name_job">
+                        <div class="name">Выйти</div>
+                    </div>
+                </div>
+                <i class="bx bx-log-out fa-solid fa-arrow-up-from-bracket" id="log_out"></i>
+            </li>
+        </ul>
+    </div>
+
+    <section class="home-section">
+
+        <a href="../index.html" class="backToMenu"><i class="fa-solid fa-angle-left"></i></a>
+
+        <div class="moreDetails">
+            <h2>Подробнее о заказе</h2>
+            <div class="moreDetails__content">
+                <div class="moreDetails-block">
+                    <img src="../img/greenwuz-logo.png" alt="">
+
+                    <div>
+                        <img src="../img/qr-code.png" alt="">
+
+                        <button>Скачать “PDF”</button>
+                    </div>
+                </div>
+
+                <div class="moreDetails-title">
+                    <h3>Подробнее о заказе</h3>
+                </div>
+
+                <div class="moreDetails-info">
+                    <div class="moreDetails-info-title">
+                        <h2>ID закза: 216</h2>
+                        <h2>Дата заказа:</h2>
+                    </div>
+
+                    <div class="moreDetails-info-content">
+                        <div>
+                            <h3>Заказчик</h3>
+
+                            <h4>Бахром Баходиров</h4>
+
+                        </div>
+                        <div>
+                            <h3>Продавец</h3>
+
+                            <h6><span>GREENWUZ</span> МЧЖ</h6>
+                        </div>
+
+                        <div>
+                            <h3>Номер телефон заказчика</h3>
+
+                            <h5>+998 90 000 00 00</h5>
+                        </div>
+
+
+                        <div>
+                            <h3>Номер телефон Продавца</h3>
+
+                            <h5>+998 90 000 00 00</h5>
+                        </div>
+
+                        <div>
+                            <h3>Адрес закзчика</h3>
+
+                            <h5>Янгиюль.Т Гулбахор</h5>
+                        </div>
+
+
+                        <div>
+                            <h3>Адрес предприятия-продавца</h3>
+
+                            <h5>Янгиюль.Т Гулбахор</h5>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="moreDetails-orders">
+                    <h3 class="moreDetails-orders-text">Заказанные товары</h3>
+
+                    <div class="moreDetails-orders-content">
+                        <table id="moreDetailsTable" class="display nowrap" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th style="z-index: 10;">№</th>
+                                    <th style="z-index: 10;">Код продукта (ИКПУ)</th>
+                                    <th style="z-index: 10;">Наз.Товара</th>
+                                    <th>Ед. Изм</th>
+                                    <th>Количество</th>
+                                    <th>Сумма заказа</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                
+                                <tr>
+                                    <td style="z-index: 10;">#</td>
+                                    <td style="z-index: 10;">1</td>
+                                    <td style="z-index: 10;">2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+
+                                </tr>
+
+                                <tr>
+                                    <td data-label="№:" style="text-align: center !important;">1</td>
+                                    <td data-label="Код продукта (ИКПУ):"><h4 style="color: #34AD54;" class="table-link">10403003014000001 - Беспроцентные доходы (Банковская услуга)(Счет-45200) кроме льготных доходов</h4></td>
+                                    <td data-label="Наз.Товара:" style="text-align: center !important;"><a href="#" style="color: #E48900  ;" class="table-link">Свежая картошка</a></td>
+                                    <td data-label="Ед. Изм:"><a href="#" style="color: #6F6F6F;" class="table-link">кг</a></td>
+                                    <td data-label="Количество:"><h4 style="color: #34AD54; font-weight: 400; font-size: 20px;">5</h4></td>
+                                    <td data-label="Сумма заказа:"><h4 style="color: #34AD54; font-weight: 400; font-size: 20px;">30 000,00</h4></td>
+                                </tr>
+
+                                <tr>
+                                    <td data-label="ID закза:">1</td>
+                                    <td data-label="ID закза:">217</td>
+                                    <td data-label="ID закза:">Бахром Баходиров</td>
+                                    <td data-label="ID закза:">+998 99 000 00 00</td>
+                                    <td data-label="ID закза:">22.02.2024</td>
+                                    <td data-label="ID закза:">Янгиюль.Т Гулбахор</td>
+                                    </tr>
+
+                                <tr>
+                                    <td data-label="ID закза:">1</td>
+                                    <td data-label="ID закза:">218</td>
+                                    <td data-label="ID закза:">Бахром Баходиров</td>
+                                    <td data-label="ID закза:">+998 99 000 00 00</td>
+                                    <td data-label="ID закза:">22.02.2024</td>
+                                    <td data-label="ID закза:">Янгиюль.Т Гулбахор</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td data-label="ID закза:">1</td>
+                                    <td data-label="ID закза:">219</td>
+                                    <td data-label="ID закза:">Бахром Баходиров</td>
+                                    <td data-label="ID закза:">+998 99 000 00 00</td>
+                                    <td data-label="ID закза:">22.02.2024</td>
+                                    <td data-label="ID закза:">Янгиюль.Т Гулбахор</td>
+                                </tr>
+
+                                <tr>
+                                    <td data-label="ID закза:">1</td>
+                                    <td data-label="ID закза:">220</td>
+                                    <td data-label="ID закза:">Бахром Баходиров</td>
+                                    <td data-label="ID закза:">+998 99 000 00 00</td>
+                                    <td data-label="ID закза:">22.02.2024</td>
+                                    <td data-label="ID закза:">Янгиюль.Т Гулбахор</td>
+                                </tr>                          
+                            </tbody>
+
+                            <tfoot>
+                                <tr>
+                                    <th colspan="4" scope="row"><h4 style="color: #3A5372; font-size: 25px;font-weight: 400;">Итого</h4></th>
+                                    <td>180 000.00</td>
+                                    <td>96 000.00</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="6" scope="row"><h4 style="font-size: 35px; color: #34AD54;">276 000.00 сум</h4></th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+
+                    <div class="moreDetails-orders-buttons">
+                        <a href="#" onclick="openModal()">
+                            Принять заказ
+                        </a>
+
+                        <a href="#" onclick="openModal2()">
+                            Отменить заказ
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="myModal" class="modal changeModal">
+        <div class="modal-bg"></div>
+        <div class="modal-content">
+
+            <div>
+                <h2>
+                    Вы точно хотите принять заказ
+                </h2>
+
+                <img src="../img/modal-img.png" alt="">
+
+                <div>
+                    <button onclick="closeModal()">Нет</button>
+                    <a href="orders.html">Да</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="myModal2" class="modal2 changeModal">
+        <div class="modal-bg"></div>
+        <div class="modal-content">
+
+            <div>
+                <h2>
+                    Вы успешно приняли заказ
+                </h2>
+
+                <img src="../img/modal-img.png" alt="">
+            </div>
+        </div>
+    </div> -->
+
+    <!--LAYOUT JQUERY JS -->
+    <script src="../libs/jquery.min.js"></script>
+
+    <!-- LAYOUT TABLE JS -->
+    <script src="../libs/dataTables.js"></script>
+    <script src="../libs/fixedColumns.js"></script>
+
+    <script src="../libs/chart.js"></script>
+
+    <!-- LANDING -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+    <script src="../js/moreDetails/moreDetailsTable.js"></script>
+    <script src="../js/moreDetails/moreDetails.js"></script>
+    <script src="../js/moreDetails/moreDetailsModal.js"></script>
+
+    <script src="../js/main.js"></script>
+
+    <script src="../libs/FontAwesome.js"></script>
+
+
+</body>
+
+</html>
